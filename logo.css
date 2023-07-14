@@ -1,0 +1,76 @@
+.logo h1 a ul{
+    position:absolute;
+    top:50%;
+    left:30%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  .logo h1 a ul li{
+    list-style:none;
+    font-family:arial;
+    font-size:3em;
+    letter-spacing:15px;
+    text-shadow:none;
+    animation:animate 1s infinite linear;
+  }
+  @keyframes animate{
+    0%{
+      color:#ff0080;
+      text-shadow:none;
+    }
+    18%{
+      color:#ff0080;
+      text-shadow:none;
+    }
+    20%{
+      color:#ff80ff;
+      text-shadow:0 0 7px #5b1ae6,0 0 20px #ff80ff;
+    }
+    30%{
+      color:#ff0080;
+      text-shadow:none;
+    }
+    35%{
+      color:#ff80ff;
+      text-shadow:0 0 7px #8000ff,0 0 20px #ff80ff;
+    }
+    70%{
+      color:#800040;
+      text-shadow:none;
+    }
+    85%{
+      color:#ff80ff;
+      text-shadow:0 0 7px #8000ff,0 0 20px #ff80ff;
+    }
+    90%{
+      color:#400040;
+      text-shadow:none;
+    }
+    100%{
+      color:#800080;
+      text-shadow:none;
+    }
+  }
+  .logo h1 a ul li:nth-child(1){
+    animation-delay:.2s;
+  }
+  .logo h1 a ul li:nth-child(2){
+    animation-delay:.4s;
+  }
+  .logo h1 a ul li:nth-child(3){
+    animation-delay:.6s;
+  }
+  .logo h1 a ul li:nth-child(4){
+    animation-delay:.8s;
+  }
+  .logo h1 a ul li:nth-child(5){
+    animation-delay:1s;
+  }
+  .logo h1 a ul li:nth-child(6){
+    animation-delay:1.2s;
+  }
+  .logo h1 a ul li:nth-child(7){
+    animation-delay:1.4s;
+  }

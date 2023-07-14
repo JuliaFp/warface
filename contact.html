@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="contact.css">
+
+   
+    <title>Warface</title>
+</head>
+<body>
+    
+    <header>
+    <div class="header">
+        <div class="logo">
+               <h1><a href="index.html">
+                <ul>
+                    <li>W</li>
+                    <li>a</li>
+                    <li>r</li>
+                    <li>f</li>
+                    <li>a</li>
+                    <li>c</li>
+                    <li>e</li>
+                  </ul>
+            
+            </a></h1></div>
+            
+             <div class="Menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pushki_str.html">Пушки</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+
+                
+              </div>
+ </div>
+
+
+   
+</header>
+<main>
+<div class="wrappers">
+
+    <div class="container">
+<div class="block-info">
+    <h2>Обратная связь</h2>
+
+        <div class="forma">
+            <div class="form-at">
+                
+                <div class="validate-input-at w-50" data-validate="Обязательное поле">
+                    <input class="input-at" type="text" name="name-at" placeholder="Ваше имя" />
+                    <span class="focus-input-at"></span>
+                </div>
+                <div class="validate-input-at w-50" data-validate="Обязательное поле">
+                    <input class="input-at" type="text" name="email-at" placeholder="Ваш телефон или email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                    <span class="focus-input-at"></span>
+                </div>
+                <div class="validate-input-at" data-validate="Обязательное поле">
+                    <textarea class="input-at" name="message-at" placeholder="Ваше сообщение"></textarea>
+                    <span class="focus-input-at"></span>
+                </div>
+                <input checked="checked" class="input-at" id="checkbox-at" type="checkbox" name="checkbox-at" onchange="document.getElementById('submit-at').disabled = !this.checked;" />
+                <label for="checkbox-at">
+                    Настоящим подтверждаю, что я ознакомлен и согласен с <a href="#rules">пользовательским соглашением</a>
+                </label> 
+                <input type="hidden" name="subject-at" value="Тема формы">
+                <button type="submit" id="submit-at" class="form-at-btn" onclick="alert('Сообщение отправлено!'); return false;">Отправить</button>
+            </div>
+        </div>
+</div>
+        <div class="carts-yandex">
+    
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5c70ae30cea55ab25e57bfcfb3c11e089b8a822e29abba37bf569fcccb7f2c93&amp;width=600&amp;height=425&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="social-site">
+        <a href="https://github.com/" class="fa fa-github fa-2x"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube fa-2x"></a>
+        <a href="https://vk.com/" class="fa fa-vk fa-2x"></a>
+    </div>
+    </div>
+  
+
+</div>
+</main>     
+<footer style="height:auto; background-color:#9400D3;">
+    <h2 style="color:white; padding:40px; margin:0; text-align:center;">Made with 🤍 by ме!</h2>
+    </footer>
+
+               
+
+
+
+
+</body>
+</html>

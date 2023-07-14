@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="regist.css">
+
+   
+    <title>Warface</title>
+</head>
+<body>
+    
+    <header>
+    <div class="header">
+        <div class="logo">
+               <h1><a href="index.html">
+                <ul>
+                    <li>W</li>
+                    <li>a</li>
+                    <li>r</li>
+                    <li>f</li>
+                    <li>a</li>
+                    <li>c</li>
+                    <li>e</li>
+                  </ul>
+            
+            </a></h1></div>
+            
+             <div class="Menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pushki_str.html">Пушки</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn-sign">Регистрация</button>
+
+                <div id="id01" class="modal">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                  <form class="modal-content" action="registr.php" method="POST">
+                    <div class="container">
+                      <h1>Регистрация</h1>
+                      <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+                      <hr>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Введите Email" name="email"  required>
+                      <p>Пароль должен содержать только цифры</p>
+                      <label for="psw"><b>Пароль</b></label>
+                      <input type="password" placeholder="Введите пароль" name="psw"  required>
+                
+                      <label for="psw-repeat"><b>Повторите пароль</b></label>
+                      <input type="password" placeholder="Повторите пароль" name="psw-repeat"  required>
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+                      </label>
+                
+                      <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+                        <button type="submit" class="signupbtn">Зарегистрироваться</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+                <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+            
+              </div>
+ </div>
+
+
+   
+</header>
+<main>
+<div class="wrapper">
+<section class="nav">
+    <div class="container">
+        <div class="nav-row">
+            <div class="nav-card">
+                <a href="https://ru.warface.com/download/" class="glow-button">Скачать игру</a>
+        <h1 class="nav-card-title" style="margin: 30px 40px 0 0;">Warface</h1>
+        <p><h3>Многопользовательский онлайн-шутер нового поколения от создателей Far Cry и Crysis</h3></p>
+    </div>
+</div>
+</div>
+</section>
+
+
+    
+    <div class="main">
+        <section>
+           <div class="card left" >
+
+            <div class="front">
+                <img src="/img/bg_3.jpg" alt="">
+                
+            </div>
+        
+            <div class="back">
+        
+                <div class="back-content left">
+                   <img src="/img/gifcard_2.gif" style="width: 400px; height: 500px;">
+                  
+                </div>
+        
+            </div>
+        
+           </div>
+
+           <div class="cardt center" >
+
+            <div class="frontd">
+                <img src="/img/bg_4.jpg" alt="">
+                
+            </div>
+        
+            <div class="backd">
+        
+                <div class="back-contentd center">
+                   <img src="/img/gifcard_1.gif" style="width: 370px; height: 400px;">
+                  
+                </div>
+        
+            </div>
+        
+           </div>
+        </section>
+        <section>
+              <div class="cards right" >
+
+                  <div class="fronts">
+                        <img src="/img/bg_card.jpg" alt="">
+                
+                  </div>
+        
+                      <div class="backs">
+        
+                            <div class="back-contents right">
+                            <img src="/img/gifcard_3.gif" style="width: 370px; height: 400px;">
+                  
+                           </div>
+        
+                       </div>
+              </div>
+
+            </section>
+
+            <div class="aboutgame">
+                <img src="/img/image_1.jpeg" width="550" height="325" align="right">
+                <span><br>Компьютерная игра в жанре массового многопользовательского онлайн-шутера от первого лица (MMOFPS). 
+                    Игра разработана студиями компании Crytek: украинским филиалом Crytek Kiev, британским филиалом Crytek UK и турецким филиалом Crytek Istanbul, с 2019 года за неё отвечает студия Blackwood Games. 
+                    Проект использует игровой движок CryEngine 3.5 и выпущен для персональных компьютеров. 
+                    Это первая игра на CryEngine 3, которая вышла на Nintendo Switch</span>
+             
+            </div>
+
+
+           
+        
+    </div>
+  
+
+</div>
+</main>
+ </div>      
+<footer style="height:auto; background-color:#9400D3;">
+    <h2 style="color:white; padding:40px; margin:0; text-align:center;">Made with 🤍 by ме!</h2>
+    </footer>
+
+               
+
+
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>

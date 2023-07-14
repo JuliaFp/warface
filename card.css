@@ -1,0 +1,163 @@
+
+.left{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.card{
+    cursor: pointer;
+    width: 400px;
+    height: 430px;
+    margin: 0 0 0 -300px;
+}
+.cardt{
+    cursor: pointer;
+    width: 400px;
+    height: 430px;
+    margin: 0 0 0 100px;
+}
+.cards{
+    cursor: pointer;
+    width: 400px;
+    height: 430px;
+    margin: 0 0 0 500px;
+}
+
+
+.front,
+.back{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+.frontd,
+.backd{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+
+.fronts,
+.backs{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+
+
+.front img{
+    height: 90%;
+    width: 90%
+}
+.frontd img{
+    height: 90%;
+    width: 90%
+}
+.fronts img{
+    height: 90%;
+    width: 90%
+}
+
+
+.front{
+    transform: perspective(600px) rotateY(0deg);
+  
+  
+}
+.frontd{
+    transform: perspective(300px) rotateY(0deg);
+}
+
+.fronts{
+    transform: perspective(600px) rotateY(0deg);
+}  
+
+
+
+.back{
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #f1f1f1;
+}
+.backd{
+    transform: perspective(300px) rotateY(180deg);
+    background-color: #f1f1f1;
+}
+.backs{
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #f1f1f1;
+}
+ 
+
+.back-content{
+    width: 100%;
+    text-align: center;
+    color: #333333;
+    
+ 
+}
+.back-contentd{
+    width: 100%;
+    text-align: center;
+    color: #333333;
+}
+.back-contents{
+    width: 100%;
+    text-align: center;
+    color: #333333;
+}
+
+
+h2{
+    margin-bottom: 20px;
+}
+
+span{
+    display: block;
+    font-size: 20px; 
+}
+
+
+.card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.cardt:hover > .frontd{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.cardt:hover > .backd{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.cards:hover > .fronts{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.cards:hover > .backs{
+    transform: perspective(600px) rotateY(0deg);
+}
